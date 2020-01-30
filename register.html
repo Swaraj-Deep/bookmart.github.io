@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Register </title>
+    <script src="https://kit.fontawesome.com/a218c8aa78.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script>
+        function check_link(element) {
+            if (element == window.location.href) {
+                event.preventDefault();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="file:///home/swaraj/Public/labnetwork/home.html" onclick="check_link(this)">Book
+            Mart</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/register.html" onclick="check_link(this)">Registration Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/profile.html" onclick="check_link(this)">User Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/login.html" onclick="check_link(this)">User Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/catalog.html" onclick="check_link(this)">Books Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/cart.html" onclick="check_link(this)">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/pay.html" onclick="check_link(this)">Payment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mx-2 my-4">
+        <h1 class="font-weight-bold text-center">
+            Register Yourself
+        </h1>
+        <form>
+            <div class="input-group mx-2 my-1 pt-5">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">First and last name</span>
+                </div>
+                <input type="text" aria-label="First name" id="firstname" class="form-control">
+                <input type="text" aria-label="Last name" id="lastname" class="form-control">
+            </div>
+            <div class="input-group mx-2 py-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Email Address</span>
+                </div>
+                <input type="text" aria-label="mail" class="form-control" placeholder="name@example.com" id="mail">
+            </div>
+            <div class="input-group mx-2 py-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Age</span>
+                </div>
+                <input type="text" aria-label="age" class="form-control mr-2" id="age">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Phone Number</span>
+                </div>
+                <input type="text" aria-label="number" class="form-control" id="number">
+            </div>
+            <div class="input-group mx-2 py-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Company</span>
+                </div>
+                <input type="text" class="form-control" aria-label="company" id="companyname">
+            </div>
+            <div class="input-group mx-2 py-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Company Address</span>
+                </div>
+                <textarea class="form-control" rows="3" id="companyaddress"></textarea>
+            </div>
+        </form>
+        <button type="button" class="btn btn-outline-primary mx-2 my-2" id="regbtn"
+            onclick="showinput(this)">Register</button>
+        <button type="button" class="btn btn-outline-danger mx-2 my-2" id="rstbtn">Reset</button>
+    </div>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true" id="complete">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Registration Complete</h5>
+                    <button type="button" class="dataclose close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Relax We have saved your details.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary dataclose" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="explore_btn">Explore books.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="alert-wrapper" class="container mx-2 my-2">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="reg.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Login </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a218c8aa78.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script>
+        function check_link(element) {
+            if (element == window.location.href) {
+                event.preventDefault();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="file:///home/swaraj/Public/labnetwork/home.html" onclick="check_link(this)">Book
+            Mart</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/register.html"
+                        onclick="check_link(this)">Registration Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/profile.html"
+                        onclick="check_link(this)">User Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/login.html"
+                        onclick="check_link(this)">User Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/catalog.html"
+                        onclick="check_link(this)">Books Catalog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/cart.html"
+                        onclick="check_link(this)">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///home/swaraj/Public/labnetwork/pay.html"
+                        onclick="check_link(this)">Payment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="alert-wrapper" class="container mx-2 my-2">
+
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
